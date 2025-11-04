@@ -14,9 +14,9 @@ const AboutMe = () => {
 
   return (
     <>
-      <div className="bg-gray-900">
+      <div className="bg-[#041122]">
         <h2 className="text-5xl md:text-6xl font-bold text-center text-white pt-10">
-          About <span className="bg-pink-600 bg-clip-text ml-2 text-transparent">Me</span>
+          About <span className="bg-[#E6F99D] bg-clip-text ml-2 text-transparent">Me</span>
         </h2>
 
         <div className="text-white py-16 px-8 flex flex-col md:flex-row justify-center items-center gap-12">

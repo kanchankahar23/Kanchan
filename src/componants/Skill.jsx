@@ -13,14 +13,14 @@ const skills = [
    { name: "Github", icon: FaGithub, color: "text-orange-400", desc: "Version control & collaboration" },
   { name: "Database", icon: FaDatabase, color: "text-red-400", desc: "Data storage and management" },
     { name: "Vercel", icon: SiVercel, color: "text-green-400", desc: "Deployment" },
-    //   { name: "VS code", icon: SiVisualstudiocode, color: "text-green-400", desc: "Data storage and management" },
+    //   { name: "VS code", icon: SiVisualstudiocode, color: "text-green-400", desc: "Data storage and management" },`
 ];
 
 const Skill = () => {
   return (
-    <section className="bg-gray-900 text-white py-20 px-6 md:px-12">
+    <section className="bg-[#041122] text-white py-20 px-6 md:px-12">
       <div className="text-center mb-14">
-        <h2 className="text-5xl font-bold text-pink-500 mb-4">My Skills</h2>
+        <h2 className="text-5xl font-bold text-[#E6F99D] mb-4">My Skills</h2>
         <p className="text-gray-400 max-w-2xl mx-auto text-lg">
           I enjoy building responsive, interactive, and user-friendly web applications using these technologies.
         </p>
@@ -31,7 +31,7 @@ const Skill = () => {
         {skills.map(({ name, icon: Icon, color, desc }) => (
           <div
             key={name}
-            className="card w-40 h-44 bg-gray-800 shadow-lg hover:shadow-pink-500/30 hover:bg-gray-700 transition-all duration-500 transform hover:scale-110"
+            className="card w-40 h-44 bg-[#31363F] shadow-lg hover:shadow-pink-500/30 hover:bg-gray-700 transition-all duration-500 transform hover:scale-110"
           >
             <div className="card-body flex flex-col items-center justify-center text-center">
               <Icon className={`w-12 h-12 ${color} mb-2 group-hover:animate-bounce`} />
