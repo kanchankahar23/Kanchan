@@ -21,7 +21,7 @@ const Hero = () => {
 
       <div className="flex gap-4 mt-5">
         <button className="bg-[#d2e38e] text-[#041122] font-bold px-4 py-2 rounded-lg hover:bg-[#E6F99D] transition">Explore my Work</button>
-        <button className="border border-[#E6F99D] text-[#E6F99D] px-4 py-2 rounded-lg hover:bg-[#E6F99D] hover:text-white transition">My Resume</button>
+        <button className="border border-[#E6F99D] text-[#E6F99D] px-4 py-2 rounded-lg font-bold hover:bg-[#E6F99D] hover:text-[#041122] transition">My Resume</button>
       </div>
       <div className="flex gap-4 justify-center mt-5 ">
       <a href="https://facebook.com" className="btn btn-square btn-outline border-[#E6F99D] text-[#E6F99D] hover:bg-[#c4d389] hover:text-[#041122] transition ">
