@@ -1,5 +1,7 @@
 import React from "react";
 
+import { ArrowRight } from "lucide-react";
+import { Grid3x2 } from "lucide-react";
 const projects = [
   {
     id: 1,
@@ -21,7 +23,7 @@ const projects = [
     id: 3,
     title: "Gemini AI ChatBot",
     description: "A Gemini AI Clone built with React + Vite that mimics the user interface of Google Gemini",
-    image: "",
+    image: "../assets/Gemini AI.png",
     github: "https://github.com/kanchankahar23/Gemini-clone",
     live: "gemini-clone-tan-iota.vercel.app"
   },
@@ -39,7 +41,7 @@ const projects = [
     description: "",
     image: "",
     github: "https://github.com/kanchankahar23/Netflix-clone",
-    live:"",
+    live: "",
   }
 ];
 
@@ -62,10 +64,10 @@ const Projects = () => {
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-56 object-cover"
+              className="w-full h-40 object-cover"
             />
             <div className="p-6">
-              <h2 className="text-2xl font-semibold text-amber-300">
+              <h2 className="text-2xl  font-semibold text-[#E6F99D]">
                 {project.title}
               </h2>
               <p className="text-gray-400 mt-2">{project.description}</p>
@@ -74,7 +76,7 @@ const Projects = () => {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-amber-500 px-4 py-2 rounded-lg text-sm hover:bg-amber-600"
+                  className="bg-[#E6F99D] text-[#041122] font-semibold px-4 py-2 rounded-lg text-sm hover:bg-[#c0cf83]"
                 >
                   GitHub
                 </a>
@@ -91,6 +93,14 @@ const Projects = () => {
           </div>
         ))}
       </div>
+      <div className="flex justify-center">
+        <button className="flex items-center gap-2 px-8 py-3 mt-10 font-semibold bg-[#E6F99D] text-[#041122] rounded-lg  hover:bg-[#d8f57f] transition">
+          <Grid3x2 className="w-5 h-5" />
+          See More Projects
+          <ArrowRight className="w-5 h-5" />
+        </button>
+      </div>
+
     </div>
   );
 };
