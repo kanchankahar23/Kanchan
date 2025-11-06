@@ -14,7 +14,7 @@ const AboutMe = () => {
 
   return (
     <>
-      <div className="bg-[#041122]">
+      <div className="bg-[#041122] scroll-smooth">
         <h2 className="text-5xl md:text-6xl font-bold text-center text-white pt-10">
           About <span className="bg-[#E6F99D] bg-clip-text ml-2 text-transparent">Me</span>
         </h2>
