@@ -84,7 +84,7 @@ const Projects = () => {
                   rel="noopener noreferrer"
                   className="bg-[#E6F99D] text-[#041122] font-semibold px-4 py-2 rounded-lg text-sm hover:bg-[#c0cf83]"
                 >
-                  GitHub
+               Explore
                 </a>
                 <a
                   href={project.live}

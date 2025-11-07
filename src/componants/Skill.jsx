@@ -31,7 +31,7 @@ const Skill = () => {
         {skills.map(({ name, icon: Icon, color, desc }) => (
           <div
             key={name}
-            className="card w-40 h-44 bg-[#041122] shadow-lg hover:shadow-pink-500/30 hover:bg-gray-700 transition-all duration-500 transform hover:scale-110"
+            className="card w-40 h-44 bg-[#041122] shadow-lg hover:shadow-yellow-900/30 transition-all duration-500 transform hover:scale-110"
           >
             <div className="card-body flex flex-col items-center justify-center text-center">
               <Icon className={`w-12 h-12 ${color} mb-2 group-hover:animate-bounce`} />

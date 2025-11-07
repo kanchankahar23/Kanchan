@@ -16,7 +16,7 @@ const Navbar = () => {
 
           <a href="#home">
             <li className="hover:text-[#E6F99D] list-none font-bold transition-all duration-300 cursor-pointer">Home</li></a>
-          <a href="#aboutMe">
+          <a href="#aboutme">
             <li className="hover:text-[#E6F99D] list-none font-bold transition-all duration-300 cursor-pointer">About Me</li></a>
           <a href="#Skill">
             <li className="hover:text-[#E6F99D] list-none font-bold transition-all duration-300 cursor-pointer">Skill</li></a>
