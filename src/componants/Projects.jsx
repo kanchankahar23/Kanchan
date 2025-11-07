@@ -2,47 +2,53 @@ import React from "react";
 
 import { ArrowRight } from "lucide-react";
 import { Grid3x2 } from "lucide-react";
+import moviehub from "../assets/Moviehub.png"
+import GeminiAI from "../assets/GeminiAI.png"
+import FlyEasy from "../assets/FlyEasy.png"
+import chipswebsite from "../assets/chipswebsite.png"
+import Bookvista from "../assets/Bookvista.png"
 const projects = [
   {
     id: 1,
     title: "Movie Hub",
     description: "A responsive movie browsing app built with React and Tailwind CSS.",
-    image: "/img/moviehub.png",
-    github: "https://github.com/kanchan/movie-hub",
-    live: "https://movie-hub.vercel.app",
+    image: moviehub ,
+    github: "https://github.com/kanchankahar23/MovieHub",
+    live: "",
   },
   {
     id: 2,
     title: "BookVista",
     description: "A full-stack book listing website with login and CRUD features.",
-    image: "/img/bookvista.png",
-    github: "https://github.com/kanchan/bookvista",
-    live: "https://bookvista.vercel.app",
+    image: Bookvista,
+    github: "https://github.com/kanchankahar23/Book_finder",
+    live: "https://book-finder-jade-psi.vercel.app/",
   },
   {
     id: 3,
     title: "Gemini AI ChatBot",
     description: "A Gemini AI Clone built with React + Vite that mimics the user interface of Google Gemini",
-    image: "../assets/Gemini AI.png",
+    image: GeminiAI,
     github: "https://github.com/kanchankahar23/Gemini-clone",
-    live: "gemini-clone-tan-iota.vercel.app"
+    live: "https://gemini-clone-tan-iota.vercel.app/"
   },
   {
     id: 4,
     title: "FlyEasy",
     description: "A simple Flight booking website.",
-    image: "",
+    image: FlyEasy,
     github: "https://github.com/kanchankahar23/FlyEasy",
-    live: "fly-easy-psi.vercel.app"
+    live: "https://fly-easy-psi.vercel.app/"
   },
-  {
-    id: 5,
-    title: "Netflix",
-    description: "",
-    image: "",
-    github: "https://github.com/kanchankahar23/Netflix-clone",
-    live: "",
-  }
+ {
+  id: 5,
+  title: "Crunchy Bite",
+  description: "A modern food ordering website built with React and Tailwind CSS featuring a clean UI and responsive design.",
+  image: chipswebsite, 
+  github:"https://github.com/kanchankahar23/ChipsWebsite", 
+  live: "https://chips-website-liard.vercel.app/",
+}
+
 ];
 
 const Projects = () => {
@@ -59,12 +65,12 @@ const Projects = () => {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300"
+            className="bg-gray-800  rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300"
           >
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-40 object-cover"
+              className="m-5 h-48 object-cover"
             />
             <div className="p-6">
               <h2 className="text-2xl  font-semibold text-[#E6F99D]">
