@@ -1,113 +1,17 @@
-import React from "react";
-
-import { ArrowRight } from "lucide-react";
-import { Grid3x2 } from "lucide-react";
-import moviehub from "../assets/Moviehub.png"
-import GeminiAI from "../assets/GeminiAI.png"
-import FlyEasy from "../assets/FlyEasy.png"
-import chipswebsite from "../assets/chipswebsite.png"
-import Bookvista from "../assets/Bookvista.png"
-const projects = [
-  {
-    id: 1,
-    title: "Movie Hub",
-    description: "A responsive movie browsing app built with React and Tailwind CSS.",
-    image: moviehub ,
-    github: "https://github.com/kanchankahar23/MovieHub",
-    live: "",
-  },
-  {
-    id: 2,
-    title: "BookVista",
-    description: "A full-stack book listing website with login and CRUD features.",
-    image: Bookvista,
-    github: "https://github.com/kanchankahar23/Book_finder",
-    live: "https://book-finder-jade-psi.vercel.app/",
-  },
-  {
-    id: 3,
-    title: "Gemini AI ChatBot",
-    description: "A Gemini AI Clone built with React + Vite that mimics the user interface of Google Gemini",
-    image: GeminiAI,
-    github: "https://github.com/kanchankahar23/Gemini-clone",
-    live: "https://gemini-clone-tan-iota.vercel.app/"
-  },
-  {
-    id: 4,
-    title: "FlyEasy",
-    description: "A simple Flight booking website.",
-    image: FlyEasy,
-    github: "https://github.com/kanchankahar23/FlyEasy",
-    live: "https://fly-easy-psi.vercel.app/"
-  },
- {
-  id: 5,
-  title: "Crunchy Bite",
-  description: "A modern food ordering website built with React and Tailwind CSS featuring a clean UI and responsive design.",
-  image: chipswebsite, 
-  github:"https://github.com/kanchankahar23/ChipsWebsite", 
-  live: "https://chips-website-liard.vercel.app/",
-}
-
-];
-
 const Projects = () => {
   return (
-    <div id="Projects" className="bg-[#041122] scroll-smooth text-white py-6 px-6 md:px-16">
-      <div className="text-center mb-10">
-        <h1 className="text-4xl font-bold text-[#E6F99D]">My Latest Work</h1>
-        <p className="text-gray-400 mt-2">
-          Here are some of the projects I’ve built recently 👇
-        </p>
-      </div>
+    <section className="py-20
+      bg-[#E6F99D] dark:bg-[#041122]
+      text-[#041122] dark:text-white transition">
 
-      <div className="grid md:grid-cols-3 gap-8">
-        {projects.map((project) => (
-          <div
-            key={project.id}
-            className="bg-gray-800  rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300"
-          >
-            <img
-              src={project.image}
-              alt={project.title}
-              className="m-5 h-48 object-cover"
-            />
-            <div className="p-6">
-              <h2 className="text-2xl  font-semibold text-[#E6F99D]">
-                {project.title}
-              </h2>
-              <p className="text-gray-400 mt-2">{project.description}</p>
-              <div className="mt-4 flex gap-4">
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-[#E6F99D] text-[#041122] font-semibold px-4 py-2 rounded-lg text-sm hover:bg-[#c0cf83]"
-                >
-               Explore
-                </a>
-                <a
-                  href={project.live}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-gray-700 px-4 py-2 rounded-lg text-sm hover:bg-gray-600"
-                >
-                  Live Demo
-                </a>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-      <div className="flex justify-center">
-        <button className="flex items-center gap-2 px-8 py-3 mt-10 font-semibold bg-[#E6F99D] text-[#041122] rounded-lg  hover:bg-[#d8f57f] transition">
-          <Grid3x2 className="w-5 h-5" />
-          See More Projects
-          <ArrowRight className="w-5 h-5" />
-        </button>
-      </div>
+      <h2 className="text-center text-5xl font-bold mb-10">
+        Projects
+      </h2>
 
-    </div>
+      <p className="text-center text-gray-700 dark:text-gray-400">
+        MovieHub • BookVista • Gemini AI • FlyEasy
+      </p>
+    </section>
   );
 };
 
