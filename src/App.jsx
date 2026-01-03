@@ -1,20 +1,19 @@
-import { useState } from 'react'
-import Navbar from './componants/Navbar'
-import Hero from './componants/Hero'
-import About from './componants/About'
-import Skill from './componants/Skill'
-import Projects from './componants/Projects'
-function App() {
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import AboutMe from "./components/AboutMe";
+import Skill from "./components/Skill";
+import Projects from "./components/Projects";
+
+const App = () => {
   return (
     <>
-     <Navbar/>
-     <Hero/>
-     <About/>
-     <Skill/>
-     <Projects/>
+      <Navbar />
+      <Hero />
+      <AboutMe />
+      <Skill />
+      <Projects />
     </>
-  )
-}
+  );
+};
 
-
-export default App
+export default App;
